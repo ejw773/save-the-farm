@@ -1,0 +1,59 @@
+/* freeCodeCamp Color Scheme */
+/* from https://design-style-guide.freecodecamp.org/ */
+:root {
+  --cont-1-light: #ffffff;
+  --cont-1-dark: #0a0a23;
+  --cont-2-light: #f5f6f7;
+  --cont-2-dark: #1b1b32;
+  --cont-3-light: #dfdfe2;
+  --cont-3-dark: #2a2a40;
+  --cont-4-light: #d0d0d5;
+  --cont-4-dark: #3b3b4f;
+  --primary-purple: #dbb8ff;
+  --primary-yellow: #f1be32;
+  --primary-blue: #99c9ff;
+  --primary-green: #acd157;
+  --secondary-purple: #5a01a7;
+  --secondary-yellow: #4d3800;
+  --secondary-blue: #002ead;
+  --secondary-green: #00471b;
+}
+
+body {
+  color: var(--cont-2-light);
+  background: var(--cont-2-dark);
+}
+
+.header {
+  text-align: center;
+}
+
+.message-area {
+  height: 200px;
+  width: 50%;
+  border: 5px solid var(--primary-green);
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .message-area {
+    width: 90%;
+  }
+}
+
+.message-text {
+  margin: 20px;
+  font-size: 1.2em;
+}
+
+.main-option {
+  background-color: var(--secondary-blue);
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.second-option {
+  background-color: var(--primary-blue);
+}
