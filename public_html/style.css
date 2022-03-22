@@ -29,7 +29,6 @@ body {
 }
 
 .message-area {
-  height: 200px;
   width: 50%;
   border: 5px solid var(--primary-green);
   margin: auto;
@@ -56,4 +55,9 @@ body {
 
 .second-option {
   background-color: var(--primary-blue);
+  color: var(--cont-1-dark);
+  border: 1px solid var(--cont-1-dark);
+  padding: 10px;
+  max-width: 50%;
+  margin: 5px auto 5px auto;
 }
