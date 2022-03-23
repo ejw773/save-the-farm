@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="header">
-      <h1 class="">Save the Farm</h1>
+      <h1 class="title">Save the Farm</h1>
     </div>
     <div class="message-area">
       <p class="message-text">This is the initial message.</p>
@@ -17,6 +17,7 @@
         <div class="main-option">
           Eat
           <div class="second-option" data-choice="eat soup">Soup</div>
+          <div class="second-option" data-choice="eat mushrooms">Mushrooms</div>
         </div>
         <div class="main-option">
           Go

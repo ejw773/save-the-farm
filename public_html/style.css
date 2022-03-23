@@ -24,6 +24,10 @@ body {
   background: var(--cont-2-dark);
 }
 
+.title {
+  color: var(--cont-2-light);
+}
+
 .header {
   text-align: center;
 }
@@ -46,6 +50,7 @@ body {
 }
 
 .main-option {
+  font-size: 1.2em;
   background-color: var(--secondary-blue);
   padding: 10px;
   width: 50%;
@@ -55,6 +60,7 @@ body {
 
 .second-option {
   background-color: var(--primary-blue);
+  font-size: 0.9em;
   color: var(--cont-1-dark);
   border: 1px solid var(--cont-1-dark);
   padding: 10px;
