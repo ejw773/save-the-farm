@@ -19,17 +19,51 @@
   --secondary-green: #00471b;
 }
 
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   color: var(--cont-2-light);
   background: var(--cont-2-dark);
 }
 
-.title {
-  color: var(--cont-2-light);
+#header {
+  background-color: var(--cont-1-dark);
+  margin-bottom: 2em;
+  width: 100%;
 }
 
-.header {
-  text-align: center;
+#header-contents {
+  padding: 1em;
+  width: 50%;
+  margin: auto;
+}
+
+.title {
+  color: var(--cont-1-light);
+  text-align: left;
+  padding: 1em;
+  display: inline;
+}
+
+#status-button {
+  color: var(--cont-1-light);
+  border: 1px solid var(--cont-1-light);
+  display: inline;
+  font-size: 1.5em;
+  padding: 0.1em 0.4em 0.1em 0.4em;
+}
+
+#status-button:hover {
+  background-color: var(--cont-1-light);
+  color: var(--cont-1-dark);
 }
 
 .message-area {
@@ -40,7 +74,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .message-area {
-    width: 90%;
+    width: 100%;
   }
 }
 

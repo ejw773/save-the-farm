@@ -4,7 +4,7 @@ let theOptions = {
 };
 
 let respondToClick = (e) => {
-  console.log(e.target.dataset.choice);
+  console.log(e.target.dataset.button);
 };
 
 let secondOptions = document.getElementsByClassName('second-option');
@@ -12,6 +12,5 @@ for (let i = 0; i < secondOptions.length; i++) {
   secondOptions[i].addEventListener('click', respondToClick);
 }
 
-console.log(theOptions[0]);
-console.log('others:');
-console.log(theOptions[1]);
+let statusMenu = document.getElementById('status-button');
+statusMenu.addEventListener('click', respondToClick);
