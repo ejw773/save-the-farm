@@ -10,6 +10,7 @@ $has_soup = false;
 $moved_cupboard = false;
 $is_hungry = true;
 $needs_bathroom = true;
+$input = key($_POST);
 
 // Include each of the function definitions
 
@@ -32,32 +33,9 @@ echo "\nHello there. It's been a harrowing few weeks. First your toenail issue, 
 
 
 // Play 25 rounds
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
-gameRound();
+gameRound($input);
 
-
-// Game Is Over
-echo "\n**********ATTENTION***********\n The game is over!";
+if ($rounds_left < 1) {
+  // Game Is Over
+  echo "\n**********ATTENTION***********\n The game is over!";
+}

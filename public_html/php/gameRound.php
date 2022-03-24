@@ -7,6 +7,7 @@ function gameRound($input)
   if ($rounds_left <= 0) {
     return;
   }
+  echo "YOU ENTERED: $input";
   printStatus();
   $input = strtolower($input);
   echo "\n";

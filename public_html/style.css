@@ -47,6 +47,11 @@ body {
   margin: auto;
 }
 
+.input-box {
+  padding: 20px;
+  margin: auto;
+}
+
 .title {
   color: var(--cont-1-light);
   text-align: left;
