@@ -1,5 +1,7 @@
 <?php
 
+
+session_start();
 // Global Variable Initialization
 $rounds_left = 25;
 $location = "kitchen";
