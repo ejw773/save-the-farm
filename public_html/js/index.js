@@ -17,6 +17,7 @@ let sendRequest = (params) => {
 let sendText = (e) => {
   console.log(e.target.value);
   sendRequest(e.target.value);
+  document.getElementById('user-input').value = '';
 };
 
 let submitButton = document.getElementById('submit-button');
